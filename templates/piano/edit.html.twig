@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Piano{% endblock %}
+
+{% block body %}
+    <h1>Edit Piano</h1>
+
+    {{ include('piano/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('piano_index') }}">back to list</a>
+
+    {{ include('piano/_delete_form.html.twig') }}
+{% endblock %}

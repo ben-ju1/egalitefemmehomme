@@ -1,0 +1,40 @@
+
+{% block title %}Piano index{% endblock %}
+
+{% block main %}
+    <h1>Piano index</h1>
+
+    <table class="table" style="background-color: red;">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Note</th>
+                <th>Image</th>
+                <th>Sound</th>
+                <th>AlternativeNote</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for piano in pianos %}
+            <tr>
+                <td>{{ piano.id }}</td>
+                <td>{{ piano.note }}</td>
+                <td>{{ piano.image }}</td>
+                <td>{{ piano.sound }}</td>
+                <td>{{ piano.alternativeNote }}</td>
+                <td>
+                    <a href="{{ path('piano_show', {'id': piano.id}) }}">show</a>
+                    <a href="{{ path('piano_edit', {'id': piano.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('piano_new') }}">Create new</a>
+{% endblock %}

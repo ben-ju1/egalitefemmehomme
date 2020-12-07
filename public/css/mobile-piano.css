@@ -1,0 +1,62 @@
+#banner div.wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.wrapper {
+    width: 80%;
+}
+#chords-research {
+   border:none;
+    padding: 10px;
+    font-weight: 900;
+    font-size: 2rem;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.piano-chords-img {
+    width: 80%;
+}
+#research .piano-chords-img img {
+    width: 60%;
+}
+#research {
+    width: 88%;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-right: none;
+}
+.aside-instrument {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #e98b6c;
+    width: 12%;
+    box-shadow: black 1px 1px 4px;
+}
+.aside-instrument h3 {
+    margin-bottom: 0;
+}
+.aside-image {
+    width: 80px;
+}
+.list-instrument {
+    margin: 0;
+}
+.list-instrument div {
+    border: 3px dashed #fff; ;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

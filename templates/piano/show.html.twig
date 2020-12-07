@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Piano{% endblock %}
+
+{% block body %}
+    <h1>Piano</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ piano.id }}</td>
+            </tr>
+            <tr>
+                <th>Note</th>
+                <td>{{ piano.note }}</td>
+            </tr>
+            <tr>
+                <th>Image</th>
+                <td>{{ piano.image }}</td>
+            </tr>
+            <tr>
+                <th>Sound</th>
+                <td>{{ piano.sound }}</td>
+            </tr>
+            <tr>
+                <th>AlternativeNote</th>
+                <td>{{ piano.alternativeNote }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('piano_index') }}">back to list</a>
+
+    <a href="{{ path('piano_edit', {'id': piano.id}) }}">edit</a>
+
+    {{ include('piano/_delete_form.html.twig') }}
+{% endblock %}

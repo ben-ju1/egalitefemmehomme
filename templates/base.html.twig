@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900&display=swap" rel="stylesheet">
+    <link href="{{ asset('css/mobile-main.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/mobile-home.css') }}" rel="stylesheet">
+    {% block stylesheets %}
+    {% endblock %}
+</head>
+<body>
+<header id="header" class="alt">
+    <h1>
+        <a href="{{ path('home') }}">égalité femmes - hommes</a>
+    </h1>
+    <nav id="nav">
+        <ul>
+            <li class="menu-handler">
+                <div class="menu">Informations</div>
+                <ul id="sub-menu-instruments" style="display: none;">
+                    <li><a href="{{ path('sport') }}">Sport</a></li>
+                    <li><a href="{{ path('culture') }}">Culture</a></li>
+                    <li><a href="{{ path('politique') }}">Politique</a></li>
+                    <li><a href="{{ path('travail') }}">Travail</a></li>
+                    <li><a href="{{ path('art') }}">Art</a></li>
+                </ul>
+            </li>
+            <li class="menu2-handler">
+                <div class="menu2">Conférences & débats</div>
+                <ul id="sub-menu-instruments2" style="display: none;">
+                    <li><a href="{{ path('conférences') }}">Conférences & live</a></li>
+                    <li><a href="{{ path('podcasts') }}">Podcasts & musiques</a></li>
+                    <li><a href="{{ path('documents') }}">Documents</a></li>
+                    <li><a href="{{ path('réflexions') }}">Réflexions</a></li>
+                </ul>
+            </li>
+            <li class="menu3-handler">
+                <div class="menu3">Discussions & outils</div>
+                <ul id="sub-menu-instruments3" style="display: none;">
+                    <li><a href="{{ path('témoignages') }}">Témoignages & commentaires</a></li>
+                    <li><a href="{{ path('ressources') }}">Ressources & outils</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+{% block main %}
+    <main>
+        <section id="banner">
+            <h2 style="font-size: 30px;">L'égalite femmes-hommes : une approche pluri thématique</h2>
+            <p style="font-size: 20px;">Transformer le monde pour plus de respect de genre...</p>
+            <ul class="actions">
+                <li><a href="#" class="button">En apprendre plus</a></li>
+            </ul>
+        </section>
+        <div class="wrapper style1">
+            <section class="container">
+                <article class="major">
+                    <h2>Nos thématiques</h2>
+                </article>
+                <div class="thumbnails">
+                    <article class="box special">
+                        <img src="https://img.icons8.com/dusk/64/000000/video.png" class="instruments" />
+                        <h3>Vidéos</h3>
+                        <p>Morbi in sem quis dui placerat ornare lorem pellentesque odio nisi sed euismod. In tempus
+                            posuere augue eu magna adipiscing.</p>
+                        <a href="{{ path('podcasts') }}" class="check-button">En savoir plus</a>
+                    </article>
+                    <article class="box special">
+                        <img src="https://img.icons8.com/bubbles/100/000000/video-conference.png" class="instruments"/>
+                        <h3>Conférences</h3>
+                        <p>Morbi in sem quis dui placerat ornare lorem pellentesque odio nisi sed euismod. In tempus
+                            posuere augue eu magna adipiscing.</p>
+                        <a href="{{ path('conférences') }}" class="check-button">En savoir plus</a>
+
+                    </article>
+                    <article class="box special">
+                        <img src="https://img.icons8.com/fluent/96/000000/quote.png" class="instruments" />
+                        <h3>Témoignages</h3>
+                        <p>Morbi in sem quis dui placerat ornare lorem pellentesque odio nisi sed euismod. In tempus
+                            posuere augue eu magna adipiscing.</p>
+                        <a href="{{ path('témoignages') }}" class="check-button">En savoir plus</a>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+{% endblock %}
+{% block javascripts %}
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous">
+    </script>
+    <script src="{{ asset('js/sub-menu.js') }}"></script>
+{% endblock %}
+<footer>
+</footer>
+</body>
+</html>

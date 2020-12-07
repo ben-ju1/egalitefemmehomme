@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+{% block main %}
+    <style>
+        #banner {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        iframe {
+            margin: 0 40px;
+        }
+        div {
+            text-align: center;
+        }
+
+    </style>
+    <article id="banner">
+        <div>
+            <h1>Aretha Franklin : Respect</h1>
+
+            <iframe width="500" height="300" src="https://www.youtube.com/embed/SAI_Nv3qWto" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        </div>
+        <div><h1>Grand Corps Malade : Pendant 24h</h1>
+            <iframe width="500" height="300" src="https://www.youtube.com/embed/47ifEX55o7A" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        </div>
+
+{% endblock %}

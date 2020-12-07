@@ -1,0 +1,84 @@
+{% extends 'base.html.twig' %}
+
+{% block main %}
+    <style>
+        table, tr, td, th {
+            border: solid 2px white;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 8px;
+            width: 80%;
+        }
+        p {
+            color: white !important;
+            width: 80%;
+            font-size: 20px !important;
+        }
+
+        #banner {
+            min-height: 120vh;
+        }
+
+    </style>
+        <article id="banner">
+            <h1 style="padding-bottom: 10px;">Suppression du terme "Mademoiselle" des documents administratifs</h1>
+            <div style="width: 80%; overflow: hidden; font-size: 20px;">
+                En Février 2012 “Osez le féminisme” et “Chiennes de garde”, deux associations, avaient lancé une
+                campagne
+                intitulée « Mademoiselle, la case en trop ».
+                Roselyne Bachelot-Narquin, ministre des solidarités et de la cohésion sociale à cette époque, avait
+                demandé
+                au Premier ministre en novembre, au nom de l’égalité, de faire disparaître des documents administratifs
+                le
+                terme "Mademoiselle" au profit du seul "Madame".
+                Une circulaire du Premier ministre, datée du 21 février dernier, préconise la suppression de la case «
+                Mademoiselle » de tous les formulaires administratifs.
+                Comme il est rappelé dans le texte, il s’agit de réaffirmer la demande faite aux administrations, en
+                1967 et
+                en 1974, de ne pas recourir à l’emploi de certaines formules que ne sauraient constituer un "élément de
+                l’état civil des intéressées".
+                Les services administratifs doivent désormais suivre les indications suivantes :
+            </div>
+            <table style="margin-top: 20px;">
+                <tr>
+                    <th>Termes inappropriés</th>
+                    <th>Termes à privilégier</th>
+                </tr>
+                <tr>
+                    <td>Mademoiselle</td>
+                    <td>Madame</td>
+                </tr>
+                <tr>
+                    <td>Nom de jeune fille : dans la mesure où il est possible désormais à un homme marié de prendre le
+                        nom
+                        de son épouse
+                    </td>
+                    <td>
+                        Nom de famille
+                        Nom d’usage
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nom patronymique</td>
+                    <td>Nom de famille, comme préconisé par la loi du 4 mars 2002</td>
+                </tr>
+                <tr>
+                    <td>Nom d’époux ou nom d’épouse : parce que cette terminologie omet la situation des personnes
+                        divorcées
+                        ou veuves.
+                    </td>
+                    <td>Nom d’usage</td>
+                </tr>
+            </table>
+            <p>L'appellation Mademoiselle est pour beaucoup de femme synonyme de violence symbolique. En effet, alors qu’on
+                appelle les hommes “Monsieur” dès leur plus jeune âge, on uilise le terme "Mademoiselle" pour une jeune
+                femme. Ce terme renvoie directement les femmes à leur sphère privée : leur vie personnelle, leur statut
+                matrimonial, le fait d'avoir des enfants ou non, le fait de "faire jeune" ou pas...Comme si le passage de
+                l'enfance à l'âge adulte passait encore pour les femmes par le mariage, héritage d'une époque révolue où les
+                femmes étaient des mineures toute leur vie, n'avaient aucuns droits civils et dépendaient de leur père puis
+                de leur mari. Aujourd'hui, les femmes sont des citoyennes à part entière, et doivent avoir les mêmes droits
+                que les hommes, quel que soit leur statut marital. Le mariage n'est plus obligatoire et relève d'un choix
+                personnel.</p>
+        </article>
+
+{% endblock %}

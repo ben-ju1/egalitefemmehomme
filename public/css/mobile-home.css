@@ -1,0 +1,15 @@
+.check-button {
+
+    transition: 0.3s ease-out;
+    background-color: #e98b6c;
+    padding: 1.2rem 1.75em;
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 3em;
+    white-space: nowrap;
+}
+.check-button:hover {
+    transition: .1s ease-in;
+    background-color: rgba(58, 51, 71, 0.9);
+    color: #fff;
+}

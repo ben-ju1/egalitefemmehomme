@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block main %}
+    <style>
+        #banner {
+            min-height: 100vh;
+            font-size: 20px;
+        }
+        .button {
+            padding: 8px 10px;
+            font-size: 15px;
+            margin-top: 20px;
+        }
+        p {
+            color: white !important;
+            font-size: 20px !important;
+            width: 75%;
+            text-align: center;
+        }
+    </style>
+    <article id="banner">
+        <p>Circulaire n° 5575/SG du 21 février 2012 relative à la suppression des termes 'Mademoiselle', 'nom de jeune fille',
+            'nom patronymique', 'nom d'épouse' et 'nom d'époux' des formulaires et correspondances des administrations : </p>
+
+        <a href="https://www.legifrance.gouv.fr/download/pdf/circ?id=34682" class="button">Circulaire du 21 février 2012</a>
+    </article>
+{% endblock %}

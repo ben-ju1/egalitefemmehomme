@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Elevation : Piano chords that you need{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('css/mobile-piano.css') }}" rel="stylesheet">
+{% endblock %}
+{% block main %}
+    <main>
+        <section id="banner">
+            <div class="wrapper">
+                <div id="research">
+                    <h3>Search the chords</h3>
+                    <input type="text" name="chords-research" placeholder="C, D, C#m, Bb..." id="chords-research">
+                    <div class="piano-chords-img">
+                        <img src="{{ asset('images/piano/c.png') }}">
+                    </div>
+
+                </div>
+                <aside class="aside-instrument">
+                    <h3>Change instrument</h3>
+                    <ul class="list-instrument">
+                        <li>
+                            <div><img src="{{ asset('images/acoustic-guitar.svg') }}" class="aside-image"></div>
+                        </li>
+                        <li>
+                            <div><img src="{{ asset('images/keyboard.svg') }}" class="aside-image"></div>
+                        </li>
+                        <li>
+                            <div><img src="{{ asset('images/ukulele.svg') }}" class="aside-image"></div>
+                        </li>
+
+                    </ul>
+                </aside>
+            </div>
+        </section>
+    </main>
+{% endblock %}

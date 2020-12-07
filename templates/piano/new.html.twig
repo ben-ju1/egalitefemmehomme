@@ -1,0 +1,10 @@
+
+{% block title %}New Piano{% endblock %}
+
+{% block body %}
+    <h1>Create new Piano</h1>
+
+    {{ include('piano/_form.html.twig') }}
+
+    <a href="{{ path('admin_piano') }}">back to list</a>
+{% endblock %}
